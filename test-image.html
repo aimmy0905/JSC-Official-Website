@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>图片测试页面</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 40px;
+            background: #f5f5f5;
+        }
+        .test-container {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        h1 {
+            color: #6B4FBB;
+            margin-bottom: 20px;
+        }
+        .test-section {
+            margin: 30px 0;
+            padding: 20px;
+            border: 2px solid #e0e0e0;
+            border-radius: 8px;
+        }
+        .test-section h2 {
+            color: #333;
+            font-size: 18px;
+            margin-bottom: 15px;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            border: 2px solid #6B4FBB;
+            border-radius: 8px;
+        }
+        .status {
+            padding: 10px;
+            border-radius: 5px;
+            margin: 10px 0;
+            font-weight: bold;
+        }
+        .success {
+            background: #d4edda;
+            color: #155724;
+            border: 1px solid #c3e6cb;
+        }
+        .error {
+            background: #f8d7da;
+            color: #721c24;
+            border: 1px solid #f5c6cb;
+        }
+        .info {
+            background: #d1ecf1;
+            color: #0c5460;
+            border: 1px solid #bee5eb;
+            font-size: 14px;
+            padding: 15px;
+            margin: 20px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="test-container">
+        <h1>🔍 Banner图片测试页面</h1>
+        
+        <div class="info">
+            <strong>📋 测试目的：</strong> 验证图片文件是否能正常加载和显示<br>
+            <strong>📁 图片位置：</strong> images/banner/1280X1280.JPEG<br>
+            <strong>📏 图片尺寸：</strong> 726×475 像素<br>
+            <strong>💾 文件大小：</strong> 66KB
+        </div>
+
+        <!-- 测试1：相对路径 -->
+        <div class="test-section">
+            <h2>测试1️⃣：使用相对路径</h2>
+            <p>路径：<code>images/banner/1280X1280.JPEG</code></p>
+            <div id="status1" class="status">正在加载...</div>
+            <img src="images/banner/1280X1280.JPEG" 
+                 alt="Banner测试图片" 
+                 id="img1"
+                 onload="showSuccess('status1', 'img1')"
+                 onerror="showError('status1', 'img1')">
+        </div>
+
+        <!-- 测试2：不同路径写法 -->
+        <div class="test-section">
+            <h2>测试2️⃣：使用 ./ 路径</h2>
+            <p>路径：<code>./images/banner/1280X1280.JPEG</code></p>
+            <div id="status2" class="status">正在加载...</div>
+            <img src="./images/banner/1280X1280.JPEG" 
+                 alt="Banner测试图片" 
+                 id="img2"
+                 onload="showSuccess('status2', 'img2')"
+                 onerror="showError('status2', 'img2')">
+        </div>
+
+        <!-- 测试3：绝对路径 -->
+        <div class="test-section">
+            <h2>测试3️⃣：使用绝对路径</h2>
+            <p>路径：<code>file:///Users/aimmy/Desktop/jsc官网设计/images/banner/1280X1280.JPEG</code></p>
+            <div id="status3" class="status">正在加载...</div>
+            <img src="file:///Users/aimmy/Desktop/jsc官网设计/images/banner/1280X1280.JPEG" 
+                 alt="Banner测试图片" 
+                 id="img3"
+                 onload="showSuccess('status3', 'img3')"
+                 onerror="showError('status3', 'img3')">
+        </div>
+
+        <div class="info">
+            <strong>✅ 如果看到图片：</strong> 说明图片文件没问题，可以正常使用<br>
+            <strong>❌ 如果看不到图片：</strong> 请检查文件路径或图片文件本身<br>
+            <br>
+            <strong>💡 提示：</strong> 打开浏览器开发者工具（Cmd+Option+I）查看详细错误信息
+        </div>
+    </div>
+
+    <script>
+        function showSuccess(statusId, imgId) {
+            const status = document.getElementById(statusId);
+            const img = document.getElementById(imgId);
+            status.className = 'status success';
+            status.innerHTML = `✅ 图片加载成功！<br>
+                               宽度: ${img.naturalWidth}px<br>
+                               高度: ${img.naturalHeight}px<br>
+                               实际路径: ${img.src}`;
+            console.log(`✅ ${statusId} 加载成功`);
+        }
+
+        function showError(statusId, imgId) {
+            const status = document.getElementById(statusId);
+            const img = document.getElementById(imgId);
+            status.className = 'status error';
+            status.innerHTML = `❌ 图片加载失败！<br>
+                               尝试的路径: ${img.src}<br>
+                               请检查文件是否存在`;
+            console.error(`❌ ${statusId} 加载失败:`, img.src);
+        }
+
+        // 页面加载完成后的总体检查
+        window.addEventListener('load', function() {
+            console.log('=== 图片测试页面加载完成 ===');
+            console.log('当前页面路径:', window.location.href);
+            console.log('测试图片路径:', 'images/banner/1280X1280.JPEG');
+        });
+    </script>
+</body>
+</html>
+
