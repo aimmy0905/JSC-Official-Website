@@ -91,35 +91,10 @@ ul {
     align-items: center;
 }
 
-.logo {
-    display: flex;
-    align-items: center;
-}
-
-.logo a {
-    display: flex;
-    align-items: center;
-    text-decoration: none;
-}
-
-.logo img {
-    height: 50px;
-    width: auto;
-    max-width: 200px;
-    object-fit: contain;
-    transition: transform 0.3s ease;
-}
-
-.logo img:hover {
-    transform: scale(1.05);
-}
-
-/* 保留文字logo样式作为备用 */
 .logo h1 {
     font-size: 1.8rem;
     font-weight: 700;
     color: var(--primary-purple);
-    margin: 0;
 }
 
 .logo h1 span {
