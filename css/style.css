@@ -921,16 +921,18 @@ ul {
     border-radius: var(--border-radius-md);
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
     position: relative;
-    transition: all 0.3s ease;
-    border: 1px solid #f0f0f0;
-    min-width: 350px;
-    max-width: 350px;
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    border: 2px solid #f0f0f0;
+    min-width: 340px;
+    max-width: 340px;
     flex-shrink: 0;
 }
 
 .testimonial-card-compact:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 6px 25px rgba(0, 0, 0, 0.12);
+    transform: translateY(-10px) scale(1.02);
+    box-shadow: 0 12px 40px rgba(107, 79, 187, 0.25);
+    border-color: var(--primary-purple);
+    background: linear-gradient(135deg, #ffffff 0%, #fafbff 100%);
 }
 
 .quote-icon-compact {
@@ -947,6 +949,12 @@ ul {
     color: var(--white);
     font-size: 1rem;
     box-shadow: 0 3px 10px rgba(107, 79, 187, 0.3);
+    transition: all 0.4s ease;
+}
+
+.testimonial-card-compact:hover .quote-icon-compact {
+    transform: rotate(15deg) scale(1.1);
+    box-shadow: 0 6px 20px rgba(107, 79, 187, 0.5);
 }
 
 .testimonial-text-compact {
@@ -956,6 +964,11 @@ ul {
     margin-bottom: 1rem;
     min-height: 60px;
     padding-right: 45px;
+    transition: color 0.3s ease;
+}
+
+.testimonial-card-compact:hover .testimonial-text-compact {
+    color: #1a1a1a;
 }
 
 .customer-info-compact {
@@ -964,6 +977,11 @@ ul {
     gap: 0.8rem;
     padding-top: 0.8rem;
     border-top: 1px solid #f0f0f0;
+    transition: border-color 0.3s ease;
+}
+
+.testimonial-card-compact:hover .customer-info-compact {
+    border-top-color: rgba(107, 79, 187, 0.2);
 }
 
 .customer-avatar-compact {
@@ -976,6 +994,17 @@ ul {
     justify-content: center;
     flex-shrink: 0;
     border: 2px solid rgba(107, 79, 187, 0.2);
+    transition: all 0.4s ease;
+}
+
+.testimonial-card-compact:hover .customer-avatar-compact {
+    background: linear-gradient(135deg, var(--primary-purple), var(--primary-purple-light));
+    border-color: var(--primary-purple);
+    transform: scale(1.1);
+}
+
+.testimonial-card-compact:hover .customer-avatar-compact i {
+    color: var(--white);
 }
 
 .customer-avatar-compact i {
@@ -999,6 +1028,7 @@ ul {
     font-weight: 600;
     color: var(--text-dark);
     margin-bottom: 0.2rem;
+    transition: color 0.3s ease;
 }
 
 .customer-platform-compact {
@@ -1006,6 +1036,15 @@ ul {
     color: var(--text-light);
     text-transform: uppercase;
     letter-spacing: 0.5px;
+    transition: color 0.3s ease;
+}
+
+.testimonial-card-compact:hover .customer-name-compact {
+    color: var(--primary-purple);
+}
+
+.testimonial-card-compact:hover .customer-platform-compact {
+    color: var(--primary-purple-light);
 }
 
 /* 滑动按钮 */
@@ -1023,15 +1062,21 @@ ul {
     align-items: center;
     justify-content: center;
     cursor: pointer;
-    transition: all 0.3s ease;
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
     z-index: 10;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
 }
 
 .slider-btn:hover {
-    background: var(--primary-purple);
+    background: linear-gradient(135deg, var(--primary-purple), var(--primary-purple-light));
     color: var(--white);
-    transform: translateY(-50%) scale(1.1);
+    transform: translateY(-50%) scale(1.15);
+    border-color: var(--primary-purple-light);
+    box-shadow: 0 8px 25px rgba(107, 79, 187, 0.4);
+}
+
+.slider-btn:active {
+    transform: translateY(-50%) scale(1.05);
 }
 
 .slider-btn-prev {
@@ -1042,36 +1087,6 @@ ul {
     right: 0;
 }
 
-/* 小圆点指示器 */
-.testimonials-dots {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 0.6rem;
-    margin-top: 1.5rem;
-}
-
-.dot {
-    width: 10px;
-    height: 10px;
-    border-radius: 50%;
-    background: #d0d0d0;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    border: none;
-    padding: 0;
-}
-
-.dot:hover {
-    background: var(--primary-purple-light);
-    transform: scale(1.2);
-}
-
-.dot.active {
-    background: var(--primary-purple);
-    width: 28px;
-    border-radius: 5px;
-}
 
 /* ==================== 页面Banner ==================== */
 .page-banner {
@@ -1853,27 +1868,19 @@ ul {
         padding: 0 50px;
     }
     
+    .testimonials-slider {
+        gap: 1.2rem;
+    }
+    
     .testimonial-card-compact {
         min-width: 320px;
         max-width: 320px;
+        padding: 1.3rem;
     }
     
     .slider-btn {
         width: 40px;
         height: 40px;
-    }
-    
-    .testimonials-dots {
-        margin-top: 1.2rem;
-    }
-    
-    .dot {
-        width: 8px;
-        height: 8px;
-    }
-    
-    .dot.active {
-        width: 24px;
     }
 }
 
@@ -1938,6 +1945,10 @@ ul {
         padding: 0 45px;
     }
     
+    .testimonials-slider {
+        gap: 1rem;
+    }
+    
     .testimonial-card-compact {
         min-width: 280px;
         max-width: 280px;
@@ -1947,20 +1958,6 @@ ul {
     .slider-btn {
         width: 38px;
         height: 38px;
-    }
-    
-    .testimonials-dots {
-        margin-top: 1rem;
-        gap: 0.5rem;
-    }
-    
-    .dot {
-        width: 7px;
-        height: 7px;
-    }
-    
-    .dot.active {
-        width: 20px;
     }
     
     .partners-grid {
@@ -2040,10 +2037,14 @@ ul {
         padding: 0 40px;
     }
     
+    .testimonials-slider {
+        gap: 1rem;
+    }
+    
     .testimonial-card-compact {
-        min-width: 260px;
-        max-width: 260px;
-        padding: 1rem;
+        min-width: 280px;
+        max-width: 280px;
+        padding: 1.2rem;
     }
     
     .testimonial-text-compact {
@@ -2077,20 +2078,6 @@ ul {
     .slider-btn {
         width: 35px;
         height: 35px;
-    }
-    
-    .testimonials-dots {
-        margin-top: 1rem;
-        gap: 0.4rem;
-    }
-    
-    .dot {
-        width: 6px;
-        height: 6px;
-    }
-    
-    .dot.active {
-        width: 18px;
     }
     
     /* 它是如何工作的 - 超小屏幕 */

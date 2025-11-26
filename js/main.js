@@ -330,7 +330,7 @@ function scrollTestimonials(direction) {
     const slider = document.querySelector('.testimonials-slider');
     if (!slider) return;
     
-    const scrollAmount = 370; // 卡片宽度 + 间隙
+    const scrollAmount = 355; // 卡片宽度(340) + 间隙(15)
     
     if (direction === 'prev') {
         slider.scrollBy({
@@ -343,59 +343,12 @@ function scrollTestimonials(direction) {
             behavior: 'smooth'
         });
     }
-    
-    // 延迟更新圆点状态
-    setTimeout(updateDots, 300);
 }
 
-// 跳转到指定的客户反馈
-function goToTestimonial(index) {
-    const slider = document.querySelector('.testimonials-slider');
-    if (!slider) return;
-    
-    const cardWidth = 370; // 卡片宽度 + 间隙
-    slider.scrollTo({
-        left: cardWidth * index,
-        behavior: 'smooth'
-    });
-    
-    updateDots();
-}
-
-// 更新小圆点状态
-function updateDots() {
-    const slider = document.querySelector('.testimonials-slider');
-    const dots = document.querySelectorAll('.dot');
-    if (!slider || dots.length === 0) return;
-    
-    const cardWidth = 370;
-    const currentIndex = Math.round(slider.scrollLeft / cardWidth);
-    
-    dots.forEach((dot, index) => {
-        if (index === currentIndex) {
-            dot.classList.add('active');
-        } else {
-            dot.classList.remove('active');
-        }
-    });
-}
-
-// 监听滚动事件，自动更新圆点
-document.addEventListener('DOMContentLoaded', function() {
-    const slider = document.querySelector('.testimonials-slider');
-    if (!slider) return;
-    
-    let scrollTimeout;
-    slider.addEventListener('scroll', function() {
-        clearTimeout(scrollTimeout);
-        scrollTimeout = setTimeout(updateDots, 100);
-    });
-});
 
 // ==================== 导出函数供HTML使用 ====================
 
 // 确保函数可以在HTML中被调用
 window.searchProducts = searchProducts;
 window.scrollTestimonials = scrollTestimonials;
-window.goToTestimonial = goToTestimonial;
 
