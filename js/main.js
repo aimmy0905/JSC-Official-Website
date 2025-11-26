@@ -324,31 +324,7 @@ console.log('%c欢迎来到 JSC Dropshipping！', 'color: #6B4FBB; font-size: 20
 console.log('%c专业的一站式代发货服务平台', 'color: #FF8C42; font-size: 14px;');
 console.log('%c联系我们：info@jscdropshipping.com', 'color: #666; font-size: 12px;');
 
-// ==================== 客户反馈滑动功能 ====================
-
-function scrollTestimonials(direction) {
-    const slider = document.querySelector('.testimonials-slider');
-    if (!slider) return;
-    
-    const scrollAmount = 355; // 卡片宽度(340) + 间隙(15)
-    
-    if (direction === 'prev') {
-        slider.scrollBy({
-            left: -scrollAmount,
-            behavior: 'smooth'
-        });
-    } else if (direction === 'next') {
-        slider.scrollBy({
-            left: scrollAmount,
-            behavior: 'smooth'
-        });
-    }
-}
-
-
 // ==================== 导出函数供HTML使用 ====================
 
-// 确保函数可以在HTML中被调用
+// 确保searchProducts函数可以在HTML中被调用
 window.searchProducts = searchProducts;
-window.scrollTestimonials = scrollTestimonials;
-
