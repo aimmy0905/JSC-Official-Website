@@ -28,7 +28,12 @@ const footerLinks = [
         <div class="footer-section">
           <h4>联系我们</h4>
           <ul>
-            <li><i class="fas fa-envelope"></i> info@jscdropshipping.com</li>
+            <li>
+              <a href="mailto:info@jscdropshipping.com">
+                <i class="fas fa-envelope"></i>
+                info@jscdropshipping.com
+              </a>
+            </li>
             <li><i class="fas fa-phone"></i> 联系电话（待添加）</li>
           </ul>
         </div>

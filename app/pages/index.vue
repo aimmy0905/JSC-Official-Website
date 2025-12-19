@@ -1,7 +1,12 @@
 <script setup lang="ts">
+const { getRandomProducts } = useProducts()
+
 useHead({
   title: 'JSC Dropshipping - 首页'
 })
+
+// 获取8个随机热门产品
+const hotProducts = getRandomProducts(8)
 
 const services = [
   {
@@ -89,16 +94,6 @@ const advantages = [
   }
 ]
 
-const hotProducts = [
-  { title: 'New Christmas gift cartoon pendant marker drawing', price: '$1.29', icon: 'fa-image' },
-  { title: 'Toledo Cross Pendant Necklace, Men\'s Necklace', price: '$0.40', icon: 'fa-cross' },
-  { title: 'Titanium steel boxing glove pendant, a unique punk', price: '$2.35', icon: 'fa-hands-wash' },
-  { title: 'American Independence Day Alloy Gold-Plated', price: '$1.39', icon: 'fa-flag-usa' },
-  { title: 'Men\'s Hip Hop Jewelry Stainless Steel Necklace', price: '$1.05', icon: 'fa-gem' },
-  { title: 'Fashion Cuban Link Chain Gold Color Bracelet', price: '$0.85', icon: 'fa-crown' },
-  { title: 'Stainless Steel Cross Pendant Necklace', price: '$0.95', icon: 'fa-ankh' },
-  { title: 'Gold Chain Necklace for Men Hip Hop Jewelry', price: '$3.54', icon: 'fa-link' }
-]
 </script>
 
 <template>
@@ -231,15 +226,11 @@ const hotProducts = [
         </div>
 
         <div class="hot-products-grid">
-          <div v-for="(product, index) in hotProducts" :key="index" class="product-card">
-            <div class="product-image">
-              <i :class="['fas', product.icon]"></i>
-            </div>
-            <div class="product-info">
-              <h3 class="product-title">{{ product.title }}</h3>
-              <p class="product-price">{{ product.price }}</p>
-            </div>
-          </div>
+          <ProductCard
+            v-for="(product, index) in hotProducts"
+            :key="`${product.category}-${index}`"
+            :product="product"
+          />
         </div>
 
         <div class="cta-button">
