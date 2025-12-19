@@ -4,9 +4,9 @@ definePageMeta({
 })
 
 useHead({
-  title: 'JSC Dropshipping - 登录',
+  title: 'JSC Dropshipping - Login',
   meta: [
-    { name: 'description', content: 'JSC Dropshipping - 登录' }
+    { name: 'description', content: 'JSC Dropshipping - Login' }
   ]
 })
 
@@ -24,17 +24,17 @@ const generateCaptcha = () => {
   const ctx = canvas.getContext('2d')
   if (!ctx) return
 
-  // 清除画布
+  // Clear canvas
   ctx.clearRect(0, 0, canvas.width, canvas.height)
 
-  // 绘制背景
+  // Draw background
   const gradient = ctx.createLinearGradient(0, 0, canvas.width, canvas.height)
   gradient.addColorStop(0, '#f0f0f0')
   gradient.addColorStop(1, '#e8e8e8')
   ctx.fillStyle = gradient
   ctx.fillRect(0, 0, canvas.width, canvas.height)
 
-  // 生成随机验证码
+  // Generate random captcha
   const chars = 'ABCDEFGHJKLMNPQRSTUVWXYZabcdefghijkmnpqrstuvwxyz23456789'
   let newCaptcha = ''
   for (let i = 0; i < 4; i++) {
@@ -42,7 +42,7 @@ const generateCaptcha = () => {
   }
   captchaText.value = newCaptcha
 
-  // 绘制验证码文本
+  // Draw captcha text
   ctx.font = 'bold 24px Arial'
   ctx.textBaseline = 'middle'
 
@@ -55,14 +55,14 @@ const generateCaptcha = () => {
     ctx.translate(x, y)
     ctx.rotate(angle)
 
-    // 随机颜色
+    // Random color
     const colors = ['#6B4FBB', '#FF8C42', '#5a3fa0', '#e67a30']
     ctx.fillStyle = colors[Math.floor(Math.random() * colors.length)]
     ctx.fillText(newCaptcha[i], 0, 0)
     ctx.restore()
   }
 
-  // 添加干扰线
+  // Add interference lines
   for (let i = 0; i < 3; i++) {
     ctx.strokeStyle = 'rgba(0, 0, 0, 0.1)'
     ctx.beginPath()
@@ -71,7 +71,7 @@ const generateCaptcha = () => {
     ctx.stroke()
   }
 
-  // 添加干扰点
+  // Add interference dots
   for (let i = 0; i < 30; i++) {
     ctx.fillStyle = 'rgba(0, 0, 0, 0.1)'
     ctx.beginPath()
@@ -91,16 +91,16 @@ const togglePassword = () => {
 }
 
 const handleSubmit = () => {
-  // 验证验证码
+  // Verify captcha
   if (captchaInput.value.toLowerCase() !== captchaText.value.toLowerCase()) {
-    alert('验证码错误，请重新输入！')
+    alert('Incorrect captcha, please try again!')
     generateCaptcha()
     captchaInput.value = ''
     return
   }
 
-  // 演示登录
-  alert(`登录功能演示：\n账号：${username.value}\n\n实际使用时，这里会连接到 Shopify App 的登录接口。`)
+  // Demo login
+  alert(`Login Demo:\nUsername: ${username.value}\n\nIn actual use, this will connect to the Shopify App login interface.`)
 }
 
 onMounted(() => {
@@ -110,41 +110,41 @@ onMounted(() => {
 
 <template>
   <div class="login-page">
-    <!-- 登录容器 -->
+    <!-- Login Container -->
     <div class="login-container">
       <!-- Logo -->
       <div class="login-logo">
         <h1>JSC</h1>
       </div>
 
-      <!-- 登录表单 -->
+      <!-- Login Form -->
       <div class="login-card">
-        <h2 class="login-title">登录</h2>
+        <h2 class="login-title">Login</h2>
 
         <form class="login-form" @submit.prevent="handleSubmit">
-          <!-- 账号输入 -->
+          <!-- Username Input -->
           <div class="form-group">
-            <label for="username">账号</label>
+            <label for="username">Username</label>
             <input
               v-model="username"
               type="text"
               id="username"
               name="username"
-              placeholder="请输入账号"
+              placeholder="Enter username"
               required
             >
           </div>
 
-          <!-- 密码输入 -->
+          <!-- Password Input -->
           <div class="form-group">
-            <label for="password">密码</label>
+            <label for="password">Password</label>
             <div class="password-input-wrapper">
               <input
                 v-model="password"
                 :type="showPassword ? 'text' : 'password'"
                 id="password"
                 name="password"
-                placeholder="请输入密码"
+                placeholder="Enter password"
                 required
               >
               <button type="button" class="toggle-password" @click="togglePassword">
@@ -153,16 +153,16 @@ onMounted(() => {
             </div>
           </div>
 
-          <!-- 验证码输入 -->
+          <!-- Captcha Input -->
           <div class="form-group">
-            <label for="captcha">验证码</label>
+            <label for="captcha">Captcha</label>
             <div class="captcha-input-wrapper">
               <input
                 v-model="captchaInput"
                 type="text"
                 id="captcha"
                 name="captcha"
-                placeholder="请输入验证码"
+                placeholder="Enter captcha"
                 required
               >
               <div class="captcha-image">
@@ -178,23 +178,23 @@ onMounted(() => {
             </div>
           </div>
 
-          <!-- 忘记密码和注册链接 -->
+          <!-- Forgot Password and Register Links -->
           <div class="form-links">
-            <a href="#" class="link-forgot-password">忘记密码?</a>
-            <a href="#" class="link-register">没有账号? 立即注册</a>
+            <a href="#" class="link-forgot-password">Forgot Password?</a>
+            <a href="#" class="link-register">No account? Register Now</a>
           </div>
 
-          <!-- 登录按钮 -->
+          <!-- Login Button -->
           <button type="submit" class="btn-login-submit">
-            登录
+            Login
           </button>
         </form>
       </div>
 
-      <!-- 返回首页链接 -->
+      <!-- Back to Home Link -->
       <div class="back-to-home">
         <NuxtLink to="/">
-          <i class="fas fa-arrow-left"></i> 返回首页
+          <i class="fas fa-arrow-left"></i> Back to Home
         </NuxtLink>
       </div>
     </div>

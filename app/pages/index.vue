@@ -2,44 +2,44 @@
 const { getRandomProducts } = useProducts()
 
 useHead({
-  title: 'JSC Dropshipping - 首页'
+  title: 'JSC Dropshipping - Home'
 })
 
-// 获取8个随机热门产品
+// Get 8 random hot products
 const hotProducts = getRandomProducts(8)
 
 const services = [
   {
     number: '01',
     icon: '/images/icons/直销icon.PNG',
-    title: '直销',
-    description: '您可在任意电商平台销售商品，专注营销核心即可！我们全程为您承接订单对接、商品履约全流程服务，实时同步最新进度，并随时为您提供最新信息，让您省心省力。'
+    title: 'Direct Sales',
+    description: 'Sell products on any e-commerce platform and focus on marketing! We handle the entire process from order fulfillment to product delivery, synchronizing progress in real-time and keeping you informed, making your business effortless.'
   },
   {
     number: '02',
     icon: '/images/icons/中国采购.PNG',
-    title: '中国采购',
-    description: 'JSCDropshipping 为您提供从询价、采购现有产品、定制制造到送货上门的全链路生产管理服务，覆盖您公司所需的全方位供应支持。'
+    title: 'China Sourcing',
+    description: 'JSCDropshipping provides end-to-end production management services from inquiry, purchasing existing products, custom manufacturing to doorstep delivery, covering comprehensive supply support for your business needs.'
   },
   {
     number: '03',
     icon: '/images/icons/包装定制.png',
-    title: '包装定制',
-    description: 'JSCDROPSHIPPING 会严格按您的需求包装产品，通过添加您指定的专属盒子或袋子进行重新封装，为您的产品赋予独特质感与专属标识。'
+    title: 'Custom Packaging',
+    description: 'JSCDROPSHIPPING packages products strictly according to your requirements, repackaging with your designated custom boxes or bags to give your products a unique texture and exclusive branding.'
   },
   {
     number: '04',
     icon: '/images/icons/订单履行.png',
-    title: '订单履行',
-    description: '库存商品可实现 12至24小时快速履约，我们深知包裹损坏或丢失的处理难题，特提供高效解决方案与客户友好型退款政策，全程保障您的权益。'
+    title: 'Order Fulfillment',
+    description: 'In-stock items can be fulfilled within 12-24 hours. We understand the challenges of damaged or lost packages and provide efficient solutions with customer-friendly refund policies, safeguarding your interests throughout.'
   }
 ]
 
 const processSteps = [
-  { icon: '/images/icons/选品.png', title: '1.选品', description: '免费注册账号，在盒盒分销平台上选择产品，并下载商品资源包' },
-  { icon: '/images/icons/刊登.png', title: '2.刊登', description: '将所选商品刊登到您的Amazon、eBay、Shopify等店铺进行销售' },
-  { icon: '/images/icons/下单.png', title: '3.下单', description: '店铺出单后，即可到盒盒平台下单并付款' },
-  { icon: '/images/icons/发货.png', title: '4.发货', description: '盒盒海外仓24小时内出单号，2-8天妥投' }
+  { icon: '/images/icons/选品.png', title: '1. Product Selection', description: 'Register for free, select products on the JSC dropshipping platform, and download product resource packages' },
+  { icon: '/images/icons/刊登.png', title: '2. Listing', description: 'List your selected products on your Amazon, eBay, Shopify and other stores for sale' },
+  { icon: '/images/icons/下单.png', title: '3. Ordering', description: 'After your store receives an order, place the order on the JSC platform and make payment' },
+  { icon: '/images/icons/发货.png', title: '4. Shipping', description: 'JSC overseas warehouse issues tracking number within 24 hours, 2-8 days delivery' }
 ]
 
 const platforms = [
@@ -51,44 +51,44 @@ const platforms = [
 
 const advantages = [
   {
-    title: '海量优质货源',
-    subtitle: '这里有那些年，你发不动的大货！',
-    list: ['10亿专业产品团队', '13条品类线', '1000+精选产品每月上新', '60000+真实海外仓现货SKU', '支持非普货类及大件类产品海外仓直发'],
+    title: 'Abundant Quality Sources',
+    subtitle: 'The large items you struggled to ship? We handle them!',
+    list: ['Professional product team of 1 billion', '13 product category lines', '1000+ curated products added monthly', '60000+ real overseas warehouse in-stock SKUs', 'Support for non-standard and large items direct from overseas warehouse'],
     image: '/images/素材图片/海量优质货源.jpeg',
     reverse: false
   },
   {
-    title: '"0"库存运营模式',
-    subtitle: '解放资金压力，降低库存风险',
-    list: ['热门产品一件代发，精准对接市场需求', '无需备货压货，彻底规避库存风险', '零成本搭建跨境供应链，轻松启动跨境业务'],
+    title: 'Zero Inventory Model',
+    subtitle: 'Free up capital pressure, reduce inventory risk',
+    list: ['Hot products dropshipping, precisely meeting market demand', 'No need for stock preparation, completely avoid inventory risk', 'Zero-cost cross-border supply chain setup, easily start your cross-border business'],
     image: '/images/素材图片/库存运营模式.png',
     reverse: true
   },
   {
-    title: '9大海外仓服务',
-    subtitle: '24小时出单号，2-8天妥投',
-    list: ['海外总仓储面积达63万+㎡', '支持Fedex、UPS、USPS等物流全程跟踪', '满足Amazon、eBay、Walmart、Shopify物流时效要求', '快速缩短回款周期，提升资金周转率'],
+    title: '9 Major Overseas Warehouses',
+    subtitle: '24-hour tracking number, 2-8 days delivery',
+    list: ['Total overseas warehouse area exceeds 630,000+ sqm', 'Support for Fedex, UPS, USPS and other logistics tracking', 'Meet Amazon, eBay, Walmart, Shopify logistics timeliness requirements', 'Quickly shorten cash cycle, improve capital turnover rate'],
     image: '/images/素材图片/9大海外仓.jpeg',
     reverse: false
   },
   {
-    title: '售后无忧',
-    subtitle: '售后比率<2%，快捷退换货',
-    list: ['专业客服团队，快速响应', '长达60天售后服务期', '售后比率<2%', '退换货便捷，极速处理售后问题'],
+    title: 'Worry-Free After-Sales',
+    subtitle: 'After-sales rate <2%, fast returns and exchanges',
+    list: ['Professional customer service team, quick response', 'Up to 60 days after-sales service period', 'After-sales rate <2%', 'Convenient returns and exchanges, rapid handling of after-sales issues'],
     image: '/images/素材图片/售后无忧.png',
     reverse: true
   },
   {
-    title: '强大技术支持',
-    subtitle: '大量减少工作量，实现智能化管理',
+    title: 'Powerful Technical Support',
+    subtitle: 'Significantly reduce workload, achieve intelligent management',
     techSupport: true,
     image: '/images/素材图片/强大技术支持.jpg',
     reverse: false
   },
   {
-    title: '一对一客户经理服务',
-    subtitle: '您的供应链"私人管家"',
-    list: ['专业产品服务，定制化推荐，一对一服务', '协助管理订单库存，提升库存稳定性', '网站功能使用讲解，解决客户问题'],
+    title: 'One-on-One Account Manager Service',
+    subtitle: 'Your supply chain "personal butler"',
+    list: ['Professional product service, customized recommendations, one-on-one service', 'Assist with order and inventory management, improve inventory stability', 'Website functionality training, resolve customer issues'],
     image: '/images/素材图片/一对一客户经理服务.jpeg',
     reverse: true
   }
@@ -98,18 +98,18 @@ const advantages = [
 
 <template>
   <div>
-    <!-- 模块1: Banner区域 -->
+    <!-- Module 1: Banner Area -->
     <section class="hero-banner">
       <div class="container">
         <div class="hero-content">
           <div class="hero-text">
             <h1 class="hero-title">JSCDropshipping</h1>
-            <p class="hero-subtitle">我们的目标是 <span class="highlight">Go</span></p>
+            <p class="hero-subtitle">Our Goal is to <span class="highlight">Go</span></p>
             <p class="hero-description">
-              在不影响质量的情况下，以最低的成本为每个订单实现更高的盈利能力。
+              Achieve higher profitability for every order at the lowest cost without compromising quality.
             </p>
             <a href="https://apps.shopify.com/" target="_blank" class="btn-primary">
-              <i class="fab fa-shopify"></i> 安装 Shopify App
+              <i class="fab fa-shopify"></i> Install Shopify App
             </a>
           </div>
           <div class="hero-image">
@@ -122,19 +122,19 @@ const advantages = [
       </div>
     </section>
 
-    <!-- 模块2: 我们能为您做什么 -->
+    <!-- Module 2: What We Can Do For You -->
     <section class="services-section">
       <div class="container">
         <div class="section-header">
-          <h2>我们能为您做些什么？</h2>
-          <p>发布和销售产品,无需预先购买库存或包装和运送订单。</p>
+          <h2>What Can We Do For You?</h2>
+          <p>List and sell products without buying inventory upfront or packaging and shipping orders.</p>
         </div>
 
         <div class="services-grid">
           <div v-for="service in services" :key="service.number" class="service-card">
             <div class="service-number">{{ service.number }}</div>
             <div class="service-icon">
-              <img :src="service.icon" :alt="service.title + '图标'">
+              <img :src="service.icon" :alt="service.title + ' icon'">
             </div>
             <h3>{{ service.title }}</h3>
             <p>{{ service.description }}</p>
@@ -143,12 +143,12 @@ const advantages = [
       </div>
     </section>
 
-    <!-- 模块3: 只需4步，开启盈利模式 -->
+    <!-- Module 3: Start Profit Mode in Just 4 Steps -->
     <section class="process-section">
       <div class="container">
         <div class="section-header">
-          <h2>只需4步，开启</h2>
-          <h2 class="highlight-text">盈盈分销一件代发赚钱模式</h2>
+          <h2>Start Your Profitable</h2>
+          <h2 class="highlight-text">Dropshipping Business in Just 4 Steps</h2>
         </div>
 
         <div class="process-steps">
@@ -166,12 +166,12 @@ const advantages = [
       </div>
     </section>
 
-    <!-- 模块4: 自动订单履行 - 平台集成 -->
+    <!-- Module 4: Automated Order Fulfillment - Platform Integration -->
     <section class="integration-section">
       <div class="container">
         <div class="section-header">
-          <h2>自动订单履行</h2>
-          <p>我们提供与以下产品的无缝集成</p>
+          <h2>Automated Order Fulfillment</h2>
+          <p>We provide seamless integration with the following platforms</p>
         </div>
 
         <div class="platform-logos">
@@ -182,12 +182,12 @@ const advantages = [
       </div>
     </section>
 
-    <!-- 模块5: 六大核心优势 -->
+    <!-- Module 5: Six Core Advantages -->
     <section class="advantages-section">
       <div class="container">
         <div class="section-header">
-          <h2>我们的核心优势</h2>
-          <p>为您提供专业、可靠的一站式服务</p>
+          <h2>Our Core Advantages</h2>
+          <p>Providing professional, reliable one-stop service</p>
         </div>
 
         <div
@@ -203,11 +203,11 @@ const advantages = [
               <li v-for="item in advantage.list" :key="item">{{ item }}</li>
             </ul>
             <div v-if="advantage.techSupport" class="tech-support">
-              <p><strong>无技术开发团队分销商：</strong></p>
-              <p>JSC现已支持Shopify店铺商品一键刊登功能；并支持Amazon、eBay、Wish、Shopify等平台店铺账号与JSC系统绑定，可实现订单加载、库存同步、自动上传跟踪号等功能。</p>
+              <p><strong>For Distributors Without Technical Development Team:</strong></p>
+              <p>JSC now supports one-click listing for Shopify store products; and supports binding Amazon, eBay, Wish, Shopify and other platform store accounts with JSC system, enabling order loading, inventory synchronization, automatic tracking number upload and more.</p>
 
-              <p><strong>拥有技术开发团队分销商：</strong></p>
-              <p>可通过公共API接口，实现商品管理、订单管理、账户管理等诸多功能。</p>
+              <p><strong>For Distributors With Technical Development Team:</strong></p>
+              <p>Through public API interface, you can implement many functions such as product management, order management, account management, etc.</p>
             </div>
           </div>
           <div class="advantage-image-real">
@@ -217,12 +217,12 @@ const advantages = [
       </div>
     </section>
 
-    <!-- 模块6: 热门产品 -->
+    <!-- Module 6: Hot Products -->
     <section class="hot-products-section">
       <div class="container">
         <div class="section-header">
-          <h2>热门产品</h2>
-          <p>精选优质商品，助力您的业务增长</p>
+          <h2>Hot Products</h2>
+          <p>Curated quality products to grow your business</p>
         </div>
 
         <div class="hot-products-grid">
@@ -235,13 +235,13 @@ const advantages = [
 
         <div class="cta-button">
           <NuxtLink to="/products" class="btn-secondary">
-            查看更多产品
+            View More Products
           </NuxtLink>
         </div>
       </div>
     </section>
 
-    <!-- 模块7: 客户反馈 -->
+    <!-- Module 7: Customer Testimonials -->
     <TestimonialSlider />
   </div>
 </template>

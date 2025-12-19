@@ -1,9 +1,9 @@
 <script setup lang="ts">
 const footerLinks = [
-  { path: '/', label: '首页' },
-  { path: '/services', label: '服务' },
-  { path: '/products', label: '热门产品' },
-  { path: '/faq', label: '常见问题' }
+  { path: '/', label: 'Home' },
+  { path: '/services', label: 'Services' },
+  { path: '/products', label: 'Popular Products' },
+  { path: '/faq', label: 'FAQ' }
 ]
 </script>
 
@@ -13,11 +13,11 @@ const footerLinks = [
       <div class="footer-content">
         <div class="footer-section">
           <h3>JSC Dropshipping</h3>
-          <p>专业的一站式代发货服务平台</p>
+          <p>Professional One-Stop Dropshipping Service Platform</p>
         </div>
 
         <div class="footer-section">
-          <h4>快速链接</h4>
+          <h4>Quick Links</h4>
           <ul>
             <li v-for="link in footerLinks" :key="link.path">
               <NuxtLink :to="link.path">{{ link.label }}</NuxtLink>
@@ -26,7 +26,7 @@ const footerLinks = [
         </div>
 
         <div class="footer-section">
-          <h4>联系我们</h4>
+          <h4>Contact Us</h4>
           <ul>
             <li>
               <a href="mailto:info@jscdropshipping.com">
@@ -34,12 +34,12 @@ const footerLinks = [
                 info@jscdropshipping.com
               </a>
             </li>
-            <li><i class="fas fa-phone"></i> 联系电话（待添加）</li>
+            <li><i class="fas fa-phone"></i> Contact Number (To Be Added)</li>
           </ul>
         </div>
 
         <div class="footer-section">
-          <h4>关注我们</h4>
+          <h4>Follow Us</h4>
           <div class="social-links">
             <a href="#"><i class="fab fa-facebook"></i></a>
             <a href="#"><i class="fab fa-twitter"></i></a>

@@ -7,33 +7,33 @@ interface Testimonial {
 
 const testimonials: Testimonial[] = [
   {
-    text: '服务美好，支持也不错，这次新代发货套餐很贴很有帮助，价格好，运送也要好......',
-    name: '贝查',
-    platform: '亚马逊花园'
+    text: 'Excellent service and great support. The new dropshipping package is very helpful, with good prices and reliable shipping.',
+    name: 'Betsy Chen',
+    platform: 'Amazon Marketplace'
   },
   {
-    text: '客户支持非常棒且快速。代理人总是努力解答问题并提供最佳解决方案。',
-    name: '希蔻',
+    text: 'Customer support is outstanding and responsive. The team always works hard to answer questions and provide the best solutions.',
+    name: 'Sarah Kim',
     platform: 'SHOPIFY'
   },
   {
-    text: 'JSC提供了优质的产品和服务，物流速度快，客户经理响应及时，大大提升了我们的运营效率。',
-    name: '李明',
+    text: 'JSC provides high-quality products and services. Fast logistics and timely customer manager responses have greatly improved our operational efficiency.',
+    name: 'Michael Lee',
     platform: 'eBay'
   },
   {
-    text: '合作一年多了，JSC的零库存模式让我节省了大量资金，产品质量稳定，售后服务也很到位。',
-    name: '王芳',
+    text: 'We\'ve been working together for over a year. JSC\'s zero-inventory model has saved us substantial capital, with stable product quality and excellent after-sales service.',
+    name: 'Emma Wang',
     platform: 'Amazon'
   },
   {
-    text: '从选品到发货，JSC提供了完整的解决方案，让我可以专注于营销和客户服务，非常推荐！',
-    name: '张伟',
+    text: 'From product selection to shipping, JSC provides a complete solution, allowing me to focus on marketing and customer service. Highly recommended!',
+    name: 'David Zhang',
     platform: 'Shopify'
   },
   {
-    text: '海外仓的发货速度真的很快，客户满意度大大提升，售后问题也能快速解决，值得信赖的合作伙伴。',
-    name: '刘娜',
+    text: 'The overseas warehouse shipping speed is incredibly fast, customer satisfaction has greatly increased, and after-sales issues are resolved quickly. A trustworthy partner.',
+    name: 'Lisa Liu',
     platform: 'Walmart'
   }
 ]
@@ -55,8 +55,8 @@ const scrollTestimonials = (direction: 'prev' | 'next') => {
   <section class="testimonials-section">
     <div class="container">
       <div class="section-header">
-        <h2>客户反馈</h2>
-        <p>来自真实客户的评价</p>
+        <h2>Customer Testimonials</h2>
+        <p>Reviews from Real Customers</p>
       </div>
 
       <div class="testimonials-slider-container">

@@ -2,10 +2,10 @@
 const route = useRoute()
 
 const navItems = [
-  { path: '/', label: '首页' },
-  { path: '/services', label: '服务' },
-  { path: '/products', label: '热门产品' },
-  { path: '/faq', label: '常见问题' }
+  { path: '/', label: 'Home' },
+  { path: '/services', label: 'Services' },
+  { path: '/products', label: 'Popular Products' },
+  { path: '/faq', label: 'FAQ' }
 ]
 
 const isMenuOpen = ref(false)
@@ -38,10 +38,10 @@ const isActive = (path: string) => {
           </NuxtLink>
         </li>
         <li>
-          <NuxtLink to="/login" class="btn-login" @click="closeMenu">登录</NuxtLink>
+          <NuxtLink to="/login" class="btn-login" @click="closeMenu">Login</NuxtLink>
         </li>
         <li>
-          <a href="mailto:info@jscdropshipping.com" class="btn-contact">联系我们</a>
+          <a href="mailto:info@jscdropshipping.com" class="btn-contact">Contact Us</a>
         </li>
       </ul>
       <div class="hamburger" :class="{ active: isMenuOpen }" @click="toggleMenu">

@@ -1,8 +1,8 @@
 <script setup lang="ts">
 useHead({
-  title: '服务 - JSC Dropshipping',
+  title: 'Services - JSC Dropshipping',
   meta: [
-    { name: 'description', content: 'JSC Dropshipping 服务 - 品牌定制、产品采购、质量检查、物流配送' }
+    { name: 'description', content: 'JSC Dropshipping Services - Brand Customization, Product Sourcing, Quality Inspection, Logistics Delivery' }
   ]
 })
 
@@ -28,98 +28,98 @@ const logisticsPartners = [
 ]
 
 const workSteps = [
-  { number: 1, icon: 'fa-list-check', title: '提供产品信息', description: '客户需要提供产品信息，我们将根据客户的需求来进行采购' },
-  { number: 2, icon: 'fa-search', title: '查找产品', description: '我们将为您寻找所需的产品或定制产品' },
-  { number: 3, icon: 'fa-truck-loading', title: '查找运输解决方案', description: '我们将为您推荐合适的运输方案' },
-  { number: 4, icon: 'fa-dollar-sign', title: '为您发送报价', description: '我们将为您提供透明的报价' },
-  { number: 5, icon: 'fa-handshake', title: '开始合作', description: '我们开始为您提供服务，让您专注业务' }
+  { number: 1, icon: 'fa-list-check', title: 'Provide Product Information', description: 'Customers need to provide product information, and we will procure based on your requirements' },
+  { number: 2, icon: 'fa-search', title: 'Find Products', description: 'We will find the products you need or customize products for you' },
+  { number: 3, icon: 'fa-truck-loading', title: 'Find Shipping Solutions', description: 'We will recommend suitable shipping solutions for you' },
+  { number: 4, icon: 'fa-dollar-sign', title: 'Send You a Quote', description: 'We will provide you with a transparent quote' },
+  { number: 5, icon: 'fa-handshake', title: 'Start Cooperation', description: 'We start serving you, allowing you to focus on your business' }
 ]
 </script>
 
 <template>
   <div>
-    <!-- 页面标题Banner -->
+    <!-- Page Banner -->
     <section class="page-banner">
       <div class="container">
-        <h1>服务业</h1>
+        <h1>Services</h1>
         <div class="breadcrumb">
-          <NuxtLink to="/">首页</NuxtLink>
+          <NuxtLink to="/">Home</NuxtLink>
           <span>/</span>
-          <span>服务页</span>
+          <span>Services</span>
         </div>
       </div>
     </section>
 
-    <!-- 品牌和定制 -->
+    <!-- Brand Customization -->
     <section class="service-detail-section">
       <div class="container">
         <div class="service-detail-card">
           <div class="service-detail-image">
-            <img src="/images/素材图片/品牌定制 专属赋能.jpeg" alt="品牌定制 专属赋能">
+            <img src="/images/素材图片/品牌定制 专属赋能.jpeg" alt="Brand Customization and Empowerment">
           </div>
           <div class="service-detail-content">
-            <h2>品牌定制 专属赋能</h2>
-            <p>我们的品牌服务支持灵活定制，您可在各类包装及稳定出单的产品上添加自身标识，快速拉近与客户的距离，筑牢品牌好感度。</p>
-            <p class="highlight-text">JSCDropshipping 让直销公司的品牌打造与定制更简单高效，助力您的直销品牌打造差异化优势，脱颖而出！</p>
+            <h2>Brand Customization & Exclusive Empowerment</h2>
+            <p>Our branding services support flexible customization. You can add your own identity to various packaging and consistently selling products, quickly connecting with customers and building brand affinity.</p>
+            <p class="highlight-text">JSCDropshipping makes brand building and customization simpler and more efficient for dropshipping companies, helping your brand create differentiated advantages and stand out!</p>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- 优质产品采购 -->
+    <!-- Quality Product Sourcing -->
     <section class="quality-sourcing-section">
       <div class="container">
         <div class="sourcing-card">
           <div class="sourcing-image">
-            <img src="/images/illustrations/优质产品采购 省心高效.jpeg" alt="优质产品采购 省心高效">
+            <img src="/images/illustrations/优质产品采购 省心高效.jpeg" alt="Quality Product Sourcing">
           </div>
           <div class="sourcing-content">
-            <h2>优质产品采购 省心高效</h2>
-            <p>为客户甄选优质产品并不容易，不仅需要对接可靠供应商，还需耗费大量的时间筛选对比。</p>
-            <p>选择 JSCDropshipping，您无需费心 —— 我们依托数百万商品资源库，为您精准匹配优质产品与适配预算的靠谱供应商，全程把控品质，让您轻松获取爆款产品，省心省力！</p>
+            <h2>Quality Product Sourcing - Hassle-Free & Efficient</h2>
+            <p>Selecting quality products for customers is not easy - it requires connecting with reliable suppliers and spending considerable time on screening and comparison.</p>
+            <p>Choose JSCDropshipping and stop worrying - we leverage our database of millions of products to precisely match quality products with reliable suppliers within your budget, maintaining quality control throughout, allowing you to easily access trending products, hassle-free and effortless!</p>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- 严格质量检查 -->
+    <!-- Strict Quality Inspection -->
     <section class="quality-check-section">
       <div class="container">
         <div class="quality-card">
           <div class="quality-content">
-            <h2>严苛质量检查 品质无忧</h2>
-            <p>JSCDropshipping建立了严格的产品质量管控体系，对采购及仓储的每件产品开展全维度人工检测。</p>
-            <p>从核验产品与包装是否符合标准、实测产品可用性、到排查各类缺陷并分类处理，只有通过逐分步严苛检验的产品，我们才会安排发货，全程为您筑牢品质防线！</p>
+            <h2>Rigorous Quality Inspection - Worry-Free Quality</h2>
+            <p>JSCDropshipping has established a strict product quality control system, conducting comprehensive manual inspections on every purchased and warehoused product.</p>
+            <p>From verifying whether products and packaging meet standards, testing product usability, to identifying various defects and handling them by category - only products that pass our rigorous step-by-step inspection will be shipped, building a strong quality defense line for you throughout!</p>
           </div>
           <div class="quality-image">
-            <img src="/images/illustrations/严苛质量检查 品质无忧.jpeg" alt="严苛质量检查 品质无忧">
+            <img src="/images/illustrations/严苛质量检查 品质无忧.jpeg" alt="Rigorous Quality Inspection">
           </div>
         </div>
       </div>
     </section>
 
-    <!-- 仓储+物流 高效实现 -->
+    <!-- Warehousing + Logistics -->
     <section class="fulfillment-section">
       <div class="container">
         <div class="fulfillment-card">
           <div class="fulfillment-image">
-            <img src="/images/素材图片/仓储物流.jpeg" alt="仓储物流服务">
+            <img src="/images/素材图片/仓储物流.jpeg" alt="Warehousing and Logistics Services">
           </div>
           <div class="fulfillment-content">
-            <h2>仓储 + 物流 高效实现 助力增收</h2>
-            <p>我们提供 90 天免费仓储服务，全程保障库存安全，及时补货并随时响应发货需求，为您节省额外成本。</p>
-            <p>想要最大化收入，物流选择至关重要。位置、商品重量规格、海关政策等因素均会影响预算，而 JSCDropshipping 已全面考量这些变量。您只需从我们的多元运输方案中，挑选适配预算与目的地的选项，我们将以极具竞争力的价格，为您提供最优物流支持！</p>
+            <h2>Warehousing + Logistics - Efficient Fulfillment to Boost Revenue</h2>
+            <p>We provide 90 days of free warehousing services, ensuring inventory safety throughout, timely restocking and always responding to shipping needs, saving you extra costs.</p>
+            <p>To maximize revenue, logistics choices are critical. Location, product weight specifications, customs policies and other factors all affect budget, and JSCDropshipping has fully considered these variables. You just need to select options from our diverse shipping solutions that fit your budget and destination, and we will provide optimal logistics support at highly competitive prices!</p>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- 物流合作伙伴 -->
+    <!-- Logistics Partners -->
     <section class="logistics-partners-section">
       <div class="container">
         <div class="section-header">
-          <h2>我们的物流合作伙伴</h2>
-          <p>与全球顶级物流公司合作，确保快速可靠的配送服务</p>
+          <h2>Our Logistics Partners</h2>
+          <p>Partnering with the world's top logistics companies to ensure fast and reliable delivery services</p>
         </div>
 
         <div class="partners-grid">
@@ -130,16 +130,16 @@ const workSteps = [
       </div>
     </section>
 
-    <!-- 合作流程 - 直销模式 零库存轻松经营 -->
+    <!-- How It Works - Dropshipping Model -->
     <section class="how-it-works-section">
       <div class="container">
         <div class="section-header">
-          <h2>直销模式 零库存轻松经营</h2>
+          <h2>Dropshipping Model - Easy Zero-Inventory Business</h2>
         </div>
 
         <div class="work-intro">
-          <p>直销是无需持有库存的便捷商业模式：您完成销售后，我们全程承接产品采购、仓储管理、质量检测、重新包装，最终直接配送到您的客户手中。</p>
-          <p class="contact-prompt">如需咨询，可发送邮件至 <a href="mailto:info@jscdropshipping.com">info@jscdropshipping.com</a>，或通过右下角实时聊天与我们联系！</p>
+          <p>Dropshipping is a convenient business model that requires no inventory: After you complete a sale, we handle the entire process of product sourcing, warehouse management, quality inspection, repackaging, and finally direct delivery to your customers.</p>
+          <p class="contact-prompt">For inquiries, please send an email to <a href="mailto:info@jscdropshipping.com">info@jscdropshipping.com</a>, or contact us via the live chat in the bottom right corner!</p>
         </div>
 
         <div class="work-steps">

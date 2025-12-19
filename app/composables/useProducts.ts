@@ -1,6 +1,6 @@
 /**
- * 产品数据 Composable
- * 在任何 Nuxt 组件中使用产品图片数据
+ * Product Data Composable
+ * Use product image data in any Nuxt component
  */
 
 import {
@@ -14,41 +14,41 @@ import {
 
 export const useProducts = () => {
   /**
-   * 类别名称映射（英文 -> 中文）
+   * Category name mapping (key -> display name)
    */
   const categoryNameMap: Record<string, string> = {
-    appliances: '家电',
-    babycare: '母婴/宝宝',
-    decor: '装饰品',
-    pets: '宠物用品',
-    toys: '玩具'
+    appliances: 'Appliances',
+    babycare: 'Baby Care',
+    decor: 'Decor',
+    pets: 'Pet Supplies',
+    toys: 'Toys'
   }
 
   /**
-   * 获取中文类别名称
+   * Get category display name
    */
   const getCategoryName = (categoryKey: string): string => {
     return categoryNameMap[categoryKey] || categoryKey
   }
 
   /**
-   * 获取英文类别key
+   * Get category key from display name
    */
   const getCategoryKey = (categoryName: string): string | undefined => {
     return Object.entries(categoryNameMap).find(
-      ([_, cnName]) => cnName === categoryName
+      ([_, displayName]) => displayName === categoryName
     )?.[0]
   }
 
   /**
-   * 获取所有类别（中文）
+   * Get all categories (display names)
    */
   const getCategoriesInChinese = (): string[] => {
     return getAllCategories().map(cat => getCategoryName(cat))
   }
 
   /**
-   * 获取所有产品（包含类别信息）
+   * Get all products (with category info)
    */
   const getAllProducts = (): Array<ProductImage & { category: string }> => {
     return Object.entries(productImages).flatMap(([category, images]) =>
@@ -57,7 +57,7 @@ export const useProducts = () => {
   }
 
   /**
-   * 获取指定类别的产品
+   * Get products by category
    */
   const getProductsByCategory = (category: string): Array<ProductImage & { category: string }> => {
     const images = getImagesByCategory(category)
@@ -65,7 +65,7 @@ export const useProducts = () => {
   }
 
   /**
-   * 获取随机产品
+   * Get random products
    */
   const getRandomProducts = (count: number = 4): Array<ProductImage & { category: string }> => {
     const allProducts = getAllProducts()
@@ -75,7 +75,7 @@ export const useProducts = () => {
   }
 
   /**
-   * 获取某个类别的随机产品
+   * Get random products by category
    */
   const getRandomProductsByCategory = (
     category: string,
@@ -88,7 +88,7 @@ export const useProducts = () => {
   }
 
   /**
-   * 分页产品
+   * Paginate products
    */
   const paginateProducts = (
     products: Array<ProductImage & { category: string }>,
@@ -111,7 +111,7 @@ export const useProducts = () => {
   }
 
   /**
-   * 获取类别统计信息
+   * Get category statistics
    */
   const getCategoryStats = () => {
     return getAllCategories().map(category => ({
@@ -122,14 +122,14 @@ export const useProducts = () => {
   }
 
   return {
-    // 原始数据和函数
+    // Original data and functions
     productImages,
     getImagesByCategory,
     getAllCategories,
     getTotalImageCount,
     searchImagesByName,
 
-    // 扩展功能
+    // Extended functionality
     categoryNameMap,
     getCategoryName,
     getCategoryKey,
@@ -143,5 +143,5 @@ export const useProducts = () => {
   }
 }
 
-// 类型导出
+// Type exports
 export type { ProductImage }

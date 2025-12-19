@@ -1,8 +1,8 @@
 <script setup lang="ts">
 useHead({
-  title: '常见问题 - JSC Dropshipping',
+  title: 'FAQ - JSC Dropshipping',
   meta: [
-    { name: 'description', content: 'JSC Dropshipping 常见问题 - 了解我们的服务和解答您的疑问' }
+    { name: 'description', content: 'JSC Dropshipping FAQ - Learn about our services and get answers to your questions' }
   ]
 })
 
@@ -15,56 +15,56 @@ interface FaqQuestion {
 
 const faqQuestions: FaqQuestion[] = [
   {
-    question: '什么是Dropshipping（代发货）？',
+    question: 'What is Dropshipping?',
     answer: [
-      'Dropshipping（代发货）是一种无需持有库存的商业模式。当您的客户下单后，我们会直接从我们的仓库将产品发送给您的客户。您不需要囤货、打包或处理物流，可以专注于营销和销售。',
-      '简单来说，就像您开了一家"网上商店"，但不需要自己存货，我们帮您把货物直接送到客户手中。'
+      'Dropshipping is a business model that requires no inventory. When your customer places an order, we will ship the product directly from our warehouse to your customer. You don\'t need to stock goods, pack, or handle logistics - you can focus on marketing and sales.',
+      'Simply put, it\'s like opening an "online store" without needing to store inventory yourself - we deliver the goods directly to your customers.'
     ]
   },
   {
-    question: '如何开始使用JSC服务？',
-    answer: ['开始使用JSC服务非常简单，只需4步：', '整个过程非常简便，我们还提供一对一客服支持！'],
-    orderedList: ['注册账号：免费注册JSCDropshipping账户', '选择产品：在我们的平台上浏览并选择您想销售的产品', '上架销售：将产品信息上传到您的电商平台（如Shopify、Amazon等）', '接单发货：当客户下单后，在JSC平台下单，我们负责发货']
+    question: 'How do I start using JSC services?',
+    answer: ['Starting with JSC services is very simple, just 4 steps:', 'The whole process is very convenient, and we also provide one-on-one customer support!'],
+    orderedList: ['Register Account: Sign up for a free JSCDropshipping account', 'Select Products: Browse and select the products you want to sell on our platform', 'List for Sale: Upload product information to your e-commerce platform (such as Shopify, Amazon, etc.)', 'Order Fulfillment: After customers place orders, order on JSC platform and we handle shipping']
   },
   {
-    question: '订单处理需要多长时间？',
-    answer: ['我们的处理速度非常快：', '我们与多家全球顶级物流公司合作（如DHL、FedEx、UPS等），确保快速可靠的配送服务。'],
-    list: ['库存商品：12-24小时内出单号', '配送时间：2-8天送达（取决于目的地）', '定制商品：根据具体情况而定，我们会提前告知']
+    question: 'How long does order processing take?',
+    answer: ['Our processing speed is very fast:', 'We partner with multiple global top logistics companies (such as DHL, FedEx, UPS, etc.) to ensure fast and reliable delivery services.'],
+    list: ['In-stock items: Tracking number issued within 12-24 hours', 'Delivery time: 2-8 days delivery (depending on destination)', 'Custom products: Depends on specific circumstances, we will notify you in advance']
   },
   {
-    question: '支持哪些支付方式？',
-    answer: ['我们支持多种便捷的支付方式：', '所有支付过程都经过加密保护，确保您的资金安全。'],
-    list: ['信用卡（Visa、Mastercard、American Express）', 'PayPal', '银行转账', '支付宝（针对中国客户）']
+    question: 'What payment methods are supported?',
+    answer: ['We support multiple convenient payment methods:', 'All payment processes are encrypted to ensure your funds are secure.'],
+    list: ['Credit Cards (Visa, Mastercard, American Express)', 'PayPal', 'Bank Transfer', 'Alipay (for Chinese customers)']
   },
   {
-    question: '如何处理退换货？',
-    answer: ['我们提供完善的售后服务：', '您的客户满意度是我们的首要目标！'],
-    list: ['售后期限：长达60天售后服务期', '售后比率：我们的售后比率低于2%，产品质量有保障', '处理流程：发现问题后联系客服，我们会快速处理退换货或退款', '包裹损坏/丢失：我们承担责任，提供退款或重发服务']
+    question: 'How are returns and exchanges handled?',
+    answer: ['We provide comprehensive after-sales service:', 'Your customer satisfaction is our top priority!'],
+    list: ['After-sales period: Up to 60 days after-sales service period', 'After-sales rate: Our after-sales rate is below 2%, ensuring product quality', 'Processing: Contact customer service when issues arise, we will quickly handle returns/exchanges or refunds', 'Package damage/loss: We take responsibility and provide refunds or reshipping services']
   },
   {
-    question: '运费如何计算？',
-    answer: ['运费根据以下因素计算：', '我们提供多元运输方案，您可以根据预算和时效要求选择最合适的方式。下单前系统会显示准确的运费，没有隐藏费用！'],
-    list: ['目的地：不同国家和地区的运费不同', '产品重量和尺寸：越重越大的产品运费越高', '物流方式：我们提供多种物流选项，速度越快价格越高']
+    question: 'How is shipping calculated?',
+    answer: ['Shipping is calculated based on the following factors:', 'We provide diverse shipping solutions. You can choose the most suitable option based on your budget and timeliness requirements. The system will display accurate shipping costs before ordering - no hidden fees!'],
+    list: ['Destination: Shipping costs vary by country and region', 'Product weight and size: Heavier and larger products have higher shipping costs', 'Shipping method: We offer multiple logistics options - faster speed means higher price']
   },
   {
-    question: '是否提供产品定制服务？',
-    answer: ['当然！我们提供多种定制服务：', '通过定制服务，您可以快速建立自己的品牌，提升客户忠诚度！'],
-    list: ['包装定制：可以添加您的品牌Logo、专属包装盒/袋子', '产品定制：可以定制特定的产品款式、颜色、规格', '品牌标签：为您的产品添加专属标签，打造品牌形象']
+    question: 'Do you offer product customization services?',
+    answer: ['Absolutely! We offer multiple customization services:', 'Through customization services, you can quickly establish your own brand and increase customer loyalty!'],
+    list: ['Packaging customization: Add your brand logo, custom boxes/bags', 'Product customization: Customize specific product styles, colors, specifications', 'Brand labels: Add exclusive labels to your products to build brand image']
   },
   {
-    question: '如何联系客服？',
-    answer: ['我们提供多种联系方式：', '我们的客服团队随时准备为您解答任何问题，响应迅速，服务专业！'],
-    list: ['邮件：info@jscdropshipping.com', '在线聊天：网站右下角的实时聊天窗口', '一对一客户经理：注册后您将获得专属客户经理']
+    question: 'How can I contact customer service?',
+    answer: ['We provide multiple contact methods:', 'Our customer service team is always ready to answer any questions - fast response, professional service!'],
+    list: ['Email: info@jscdropshipping.com', 'Live Chat: Real-time chat window in the bottom right corner of the website', 'Dedicated Account Manager: You will get a dedicated account manager after registration']
   },
   {
-    question: 'JSC支持哪些电商平台？',
-    answer: ['我们与主流电商平台无缝集成：', '如果您有技术团队，还可以通过我们的API接口实现更多自定义功能！'],
-    list: ['Shopify：支持一键刊登商品，自动同步订单', 'Amazon：满足亚马逊FBA物流要求', 'eBay：完整的订单管理和库存同步', 'WooCommerce：支持WordPress电商网站', 'Wish：订单自动加载']
+    question: 'Which e-commerce platforms does JSC support?',
+    answer: ['We seamlessly integrate with mainstream e-commerce platforms:', 'If you have a technical team, you can also implement more custom functions through our API interface!'],
+    list: ['Shopify: Support one-click product listing, automatic order synchronization', 'Amazon: Meet Amazon FBA logistics requirements', 'eBay: Complete order management and inventory synchronization', 'WooCommerce: Support WordPress e-commerce websites', 'Wish: Automatic order loading']
   },
   {
-    question: '产品质量如何保障？',
-    answer: ['我们有严格的质量管控体系：', '只有通过严苛检验的产品才会发货，我们的售后比率低于2%就是最好的证明！'],
-    list: ['人工检测：每件产品发货前都经过全维度人工检测', '标准核验：检查产品和包装是否符合标准', '功能测试：实测产品可用性', '缺陷筛查：排查各类缺陷并分类处理']
+    question: 'How is product quality guaranteed?',
+    answer: ['We have a strict quality control system:', 'Only products that pass rigorous inspection will be shipped - our after-sales rate below 2% is the best proof!'],
+    list: ['Manual inspection: Every product undergoes comprehensive manual inspection before shipping', 'Standard verification: Check whether products and packaging meet standards', 'Function testing: Test product usability', 'Defect screening: Identify various defects and handle them by category']
   }
 ]
 
@@ -81,24 +81,24 @@ const toggleFaq = (index: number) => {
 
 <template>
   <div>
-    <!-- 页面标题Banner -->
+    <!-- Page Banner -->
     <section class="page-banner">
       <div class="container">
-        <h1>常见问题</h1>
+        <h1>Frequently Asked Questions</h1>
         <div class="breadcrumb">
-          <NuxtLink to="/">首页</NuxtLink>
+          <NuxtLink to="/">Home</NuxtLink>
           <span>/</span>
-          <span>常见问题</span>
+          <span>FAQ</span>
         </div>
       </div>
     </section>
 
-    <!-- FAQ内容区 -->
+    <!-- FAQ Content Area -->
     <section class="faq-section">
       <div class="container">
         <div class="faq-intro">
-          <h2>您可能想了解的问题</h2>
-          <p>我们整理了一些客户常见的问题，希望能帮助您更好地了解我们的服务。如果您有其他问题，欢迎随时联系我们！</p>
+          <h2>Questions You May Want to Know</h2>
+          <p>We've compiled some common customer questions to help you better understand our services. If you have other questions, feel free to contact us anytime!</p>
         </div>
 
         <div class="faq-container">
@@ -133,13 +133,13 @@ const toggleFaq = (index: number) => {
       </div>
     </section>
 
-    <!-- CTA区域 -->
+    <!-- CTA Section -->
     <section class="cta-section">
       <div class="container">
-        <h2>还有其他问题？</h2>
-        <p>我们的专业团队随时为您解答</p>
+        <h2>Have Other Questions?</h2>
+        <p>Our professional team is always ready to answer</p>
         <a href="mailto:info@jscdropshipping.com" class="btn-primary">
-          <i class="fas fa-envelope"></i> 联系我们
+          <i class="fas fa-envelope"></i> Contact Us
         </a>
       </div>
     </section>
