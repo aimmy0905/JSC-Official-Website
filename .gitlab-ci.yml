@@ -1,0 +1,25 @@
+
+stages:
+  # - test
+  - deploy
+before_script:
+  - asdf install
+  - pnpm install
+# test:
+#   script:
+#     - pnpm run lint
+#     - pnpm run lint:ts
+#   except:
+#     - vite-vue3-boilerplate
+#     - develop
+#     - staging
+#     - master
+
+deploy_production:
+  stage: deploy
+  script:
+    - pnpm generate
+    - pnpm deploy:production
+  only:
+    - main
+

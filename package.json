@@ -7,15 +7,19 @@
     "start": "nuxt dev",
     "dev": "nuxt dev",
     "generate": "nuxt generate",
+    "deploy:production": "node ./scripts/deploy.cjs --mode production",
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare"
   },
   "dependencies": {
+    "dayjs": "^1.11.19",
     "nuxt": "^4.2.2",
     "vue": "^3.5.25",
     "vue-router": "^4.6.4"
   },
   "devDependencies": {
+    "minimist": "^1.2.8",
+    "node-deploy": "github:beansmile/node-deploy",
     "sass": "^1.97.0"
   }
 }
