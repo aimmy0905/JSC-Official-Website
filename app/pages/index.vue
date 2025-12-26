@@ -58,7 +58,7 @@ const advantages = [
     reverse: false
   },
   {
-    title: 'Zero Inventory Model',
+    title: `"Zero Inventory" Operating Model`,
     subtitle: 'Free up capital pressure, reduce inventory risk',
     list: ['Hot products dropshipping, precisely meeting market demand', 'No need for stock preparation, completely avoid inventory risk', 'Zero-cost cross-border supply chain setup, easily start your cross-border business'],
     image: '/images/素材图片/库存运营模式.png',
