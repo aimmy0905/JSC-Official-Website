@@ -34,7 +34,7 @@ const footerLinks = [
                 info@jscdropshipping.com
               </a>
             </li>
-            <li><i class="fas fa-phone"></i> Contact Number (To Be Added)</li>
+            <li><i class="fas fa-phone"></i>+86 18327129544</li>
           </ul>
         </div>
 
