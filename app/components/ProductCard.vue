@@ -35,57 +35,98 @@ const encodedImagePath = computed(() => {
       >
     </div>
     <div class="product-info">
-      <h3 class="product-title" :title="product.name">{{ product.name }}</h3>
+      <h3 class="product-title">{{ product.name }}</h3>
+      <div class="product-name-overlay">
+        <div class="overlay-content">
+          {{ product.name }}
+        </div>
+      </div>
     </div>
   </div>
 </template>
 
-<style scoped>
+<style scoped lang="scss">
 .product-card {
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
 
-.product-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
-}
+  &:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
 
-.product-image {
-  width: 100%;
-  height: 200px;
-  overflow: hidden;
-  border-radius: 8px 8px 0 0;
-  background: #f5f5f5;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
+    .product-image img {
+      transform: scale(1.05);
+    }
+    .product-info {
+      padding: 1rem;
+      position: relative;
 
-.product-image img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  transition: transform 0.3s ease;
-}
+      .product-title {
+        opacity: 0;
+      }
 
-.product-card:hover .product-image img {
-  transform: scale(1.05);
-}
+      .product-name-overlay {
+        transform: translateY(0);
+      }
+    }
 
-.product-info {
-  padding: 1rem;
-}
+  }
 
-.product-title {
-  font-size: 0.9rem;
-  line-height: 1.4;
-  color: #333;
-  margin: 0;
-  display: -webkit-box;
-  -webkit-line-clamp: 2;
-  -webkit-box-orient: vertical;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  min-height: 2.8em;
+  .product-image {
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+    border-radius: 8px 8px 0 0;
+    background: #f5f5f5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.3s ease;
+    }
+  }
+
+  .product-info {
+    padding: 1rem;
+    position: relative;
+
+    .product-title {
+      font-size: 0.9rem;
+      line-height: 1.4;
+      color: #333;
+      margin: 0;
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      min-height: 2.8em;
+    }
+
+    .product-name-overlay {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background: rgba(255, 255, 255, 0.85);
+      transform: translateY(100%);
+      transition: transform 0.3s ease;
+      padding: 1rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 100%;
+
+      .overlay-content {
+        font-size: 0.9rem;
+        line-height: 1.4;
+        word-break: break-word;
+        max-width: 100%;
+      }
+    }
+  }
 }
 </style>
