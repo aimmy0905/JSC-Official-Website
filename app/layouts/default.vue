@@ -4,5 +4,6 @@
     <slot />
     <Footer />
     <BackToTop />
+    <FloatingContactWidget />
   </div>
 </template>
