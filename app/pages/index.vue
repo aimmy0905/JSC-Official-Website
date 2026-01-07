@@ -108,7 +108,7 @@ const advantages = [
             <p class="hero-description">
               Achieve higher profitability for every order at the lowest cost without compromising quality.
             </p>
-            <a href="https://apps.shopify.com/" target="_blank" class="btn-primary">
+            <a href="https://apps.shopify.com/jsc-dropshipping" target="_blank" class="btn-primary">
               <i class="fab fa-shopify"></i> Install Shopify App
             </a>
           </div>
