@@ -45,7 +45,7 @@ app/
 ├── composables/      # Nuxt composables (useProducts)
 ├── data/            # Generated data files (productImages.ts)
 ├── layouts/         # Layout components (default.vue wraps Navbar/Footer)
-├── pages/           # File-based routing (index, products, services, faq, login)
+├── pages/           # File-based routing (index, products, services, faq)
 └── assets/css/      # Global SCSS styles
 ```
 
@@ -82,7 +82,6 @@ File-based routing via Nuxt pages:
 - `/products` - Product catalog with filtering, search, and pagination
 - `/services` - Service descriptions
 - `/faq` - FAQ page
-- `/login` - Login page
 
 ### Styling
 

@@ -38,7 +38,7 @@ const isActive = (path: string) => {
           </NuxtLink>
         </li>
         <li>
-          <NuxtLink to="/login" class="btn-login" @click="closeMenu">Login</NuxtLink>
+           <a href="https://jscdropshipping.com/merchant" class="btn-login" target="_blank">Login</a>
         </li>
         <li>
           <a href="mailto:info@jscdropshipping.com" class="btn-contact">Contact Us</a>

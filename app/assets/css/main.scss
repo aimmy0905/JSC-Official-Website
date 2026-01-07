@@ -1,4 +1,4 @@
-/* 
+/*
  * JSC Dropshipping 官网样式表
  * 主题色：紫色渐变 + 橙色
  * 设计风格：现代、简洁、专业
@@ -23,22 +23,22 @@
     --bg-light: #f8f9fa;
     --white: #ffffff;
     --border-color: #e0e0e0;
-    
+
     /* 字体 */
     --font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
-    
+
     /* 间距 */
     --spacing-xs: 0.5rem;
     --spacing-sm: 1rem;
     --spacing-md: 2rem;
     --spacing-lg: 3rem;
     --spacing-xl: 4rem;
-    
+
     /* 圆角 */
     --border-radius-sm: 8px;
     --border-radius-md: 12px;
     --border-radius-lg: 16px;
-    
+
     /* 阴影 */
     --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.1);
     --shadow-md: 0 4px 16px rgba(0, 0, 0, 0.1);
@@ -1813,71 +1813,71 @@ ul {
     .fulfillment-card {
         grid-template-columns: 1fr;
     }
-    
+
     .advantage-card.reverse {
         direction: ltr;
     }
-    
+
     .service-module-card {
         flex-direction: column !important;
         text-align: center;
     }
-    
+
     .process-steps {
         flex-direction: column;
         gap: var(--spacing-lg);
     }
-    
+
     .step {
         max-width: 100%;
     }
-    
+
     .step-arrow {
         display: none !important;
     }
-    
+
     /* 它是如何工作的 - 平板响应式 */
     .work-steps {
         grid-template-columns: repeat(3, 1fr);
         gap: var(--spacing-md);
     }
-    
+
     .work-step-card {
         padding: 1.5rem 1rem;
     }
-    
+
     .how-it-works-section .section-header h2 {
         font-size: 2rem;
     }
-    
+
     .work-intro {
         padding: 1.2rem 1.8rem;
     }
-    
+
     .products-grid {
         grid-template-columns: repeat(3, 1fr);
         gap: 1.2rem;
     }
-    
+
     .hot-products-grid {
         grid-template-columns: repeat(3, 1fr);
         gap: 1.2rem;
     }
-    
+
     .testimonials-slider-container {
         padding: 0 50px;
     }
-    
+
     .testimonials-slider {
         gap: 1.2rem;
     }
-    
+
     .testimonial-card-compact {
         min-width: 320px;
         max-width: 320px;
         padding: 1.3rem;
     }
-    
+
     .slider-btn {
         width: 40px;
         height: 40px;
@@ -1897,111 +1897,111 @@ ul {
         box-shadow: var(--shadow-lg);
         padding: var(--spacing-md);
     }
-    
+
     .nav-menu.active {
         left: 0;
     }
-    
+
     .hamburger {
         display: flex;
     }
-    
+
     .hero-text h1 {
         font-size: 2rem;
     }
-    
+
     .section-header h2 {
         font-size: 1.8rem;
     }
-    
+
     .services-grid {
         grid-template-columns: 1fr;
     }
-    
+
     .process-steps {
         flex-direction: column;
         gap: var(--spacing-lg);
     }
-    
+
     .step {
         max-width: 100%;
     }
-    
+
     .step-arrow {
         display: none !important;
     }
-    
+
     .products-grid {
         grid-template-columns: repeat(2, 1fr);
         gap: 1rem;
     }
-    
+
     .hot-products-grid {
         grid-template-columns: repeat(2, 1fr);
         gap: 1rem;
     }
-    
+
     .testimonials-slider-container {
         padding: 0 45px;
     }
-    
+
     .testimonials-slider {
         gap: 1rem;
     }
-    
+
     .testimonial-card-compact {
         min-width: 280px;
         max-width: 280px;
         padding: 1.2rem;
     }
-    
+
     .slider-btn {
         width: 38px;
         height: 38px;
     }
-    
+
     .partners-grid {
         grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
     }
-    
+
     /* 它是如何工作的 - 手机响应式 */
     .work-steps {
         grid-template-columns: repeat(2, 1fr);
         gap: 1rem;
     }
-    
+
     .work-intro {
         padding: 1rem 1.2rem;
         margin-bottom: var(--spacing-md);
     }
-    
+
     .work-intro p {
         font-size: 0.9rem;
         line-height: 1.6;
     }
-    
+
     .how-it-works-section .section-header h2 {
         font-size: 1.5rem;
     }
-    
+
     .work-step-card {
         padding: 1.2rem 1rem;
     }
-    
+
     .step-icon-box {
         width: 60px;
         height: 60px;
         margin-bottom: 1rem;
     }
-    
+
     .step-icon-box i {
         font-size: 2rem;
     }
-    
+
     .work-step-card h3 {
         font-size: 1rem;
     }
-    
+
     .work-step-card p {
         font-size: 0.85rem;
     }
@@ -2012,79 +2012,79 @@ ul {
         --spacing-xl: 2rem;
         --spacing-lg: 1.5rem;
     }
-    
+
     .hero-text h1 {
         font-size: 1.5rem;
     }
-    
+
     .btn-primary,
     .btn-secondary {
         padding: 0.8rem 1.5rem;
         font-size: 1rem;
     }
-    
+
     .products-grid {
         grid-template-columns: 1fr;
         gap: 1rem;
     }
-    
+
     .hot-products-grid {
         grid-template-columns: 1fr;
         gap: 1rem;
     }
-    
+
     .testimonials-slider-container {
         padding: 0 40px;
     }
-    
+
     .testimonials-slider {
         gap: 1rem;
     }
-    
+
     .testimonial-card-compact {
         min-width: 280px;
         max-width: 280px;
         padding: 1.2rem;
     }
-    
+
     .testimonial-text-compact {
         font-size: 0.85rem;
         padding-right: 40px;
     }
-    
+
     .quote-icon-compact {
         width: 35px;
         height: 35px;
         font-size: 0.9rem;
     }
-    
+
     .customer-avatar-compact {
         width: 40px;
         height: 40px;
     }
-    
+
     .customer-avatar-compact i {
         font-size: 1rem;
     }
-    
+
     .customer-name-compact {
         font-size: 0.9rem;
     }
-    
+
     .customer-platform-compact {
         font-size: 0.75rem;
     }
-    
+
     .slider-btn {
         width: 35px;
         height: 35px;
     }
-    
+
     /* 它是如何工作的 - 超小屏幕 */
     .work-steps {
         grid-template-columns: 1fr;
     }
-    
+
     .how-it-works-section .section-header h2 {
         font-size: 1.3rem;
     }
@@ -2110,251 +2110,3 @@ ul {
 html {
     scroll-behavior: smooth;
 }
-
-/* ==================== 登录页面 ==================== */
-.login-page {
-    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: var(--spacing-md);
-}
-
-.login-container {
-    width: 100%;
-    max-width: 450px;
-    animation: fadeIn 0.6s ease-out;
-}
-
-/* Logo区域 */
-.login-logo {
-    text-align: center;
-    margin-bottom: var(--spacing-lg);
-}
-
-.login-logo h1 {
-    font-size: 2.5rem;
-    color: var(--text-dark);
-    font-weight: 700;
-    margin: 0;
-}
-
-/* 登录卡片 */
-.login-card {
-    background: var(--white);
-    border-radius: var(--border-radius-lg);
-    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
-    padding: var(--spacing-xl);
-}
-
-.login-title {
-    font-size: 2rem;
-    color: var(--text-dark);
-    margin-bottom: var(--spacing-lg);
-    text-align: left;
-}
-
-/* 表单样式 */
-.login-form {
-    display: flex;
-    flex-direction: column;
-    gap: var(--spacing-md);
-}
-
-.form-group {
-    display: flex;
-    flex-direction: column;
-    gap: var(--spacing-xs);
-}
-
-.form-group label {
-    font-size: 1rem;
-    color: var(--text-dark);
-    font-weight: 500;
-}
-
-.form-group input {
-    padding: 0.9rem 1.2rem;
-    border: 1px solid #e0e0e0;
-    border-radius: var(--border-radius-sm);
-    font-size: 1rem;
-    transition: all 0.3s ease;
-    background: #fafafa;
-}
-
-.form-group input:focus {
-    outline: none;
-    border-color: var(--primary-purple);
-    background: var(--white);
-    box-shadow: 0 0 0 3px rgba(107, 79, 187, 0.1);
-}
-
-.form-group input::placeholder {
-    color: #999;
-}
-
-/* 密码输入框 */
-.password-input-wrapper {
-    position: relative;
-}
-
-.password-input-wrapper input {
-    padding-right: 3rem;
-}
-
-.toggle-password {
-    position: absolute;
-    right: 1rem;
-    top: 50%;
-    transform: translateY(-50%);
-    background: none;
-    border: none;
-    color: #999;
-    cursor: pointer;
-    font-size: 1.2rem;
-    padding: 0.5rem;
-    transition: color 0.3s ease;
-}
-
-.toggle-password:hover {
-    color: var(--primary-purple);
-}
-
-/* 验证码输入框 */
-.captcha-input-wrapper {
-    display: flex;
-    gap: 1rem;
-    align-items: center;
-}
-
-.captcha-input-wrapper input {
-    flex: 1;
-}
-
-.captcha-image {
-    flex-shrink: 0;
-    background: var(--white);
-    border-radius: var(--border-radius-sm);
-    overflow: hidden;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-    cursor: pointer;
-    transition: all 0.3s ease;
-}
-
-.captcha-image:hover {
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-    transform: scale(1.02);
-}
-
-.captcha-image canvas {
-    display: block;
-}
-
-/* 表单链接 */
-.form-links {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-top: var(--spacing-xs);
-}
-
-.form-links a {
-    font-size: 0.9rem;
-    color: var(--text-light);
-    transition: color 0.3s ease;
-}
-
-.link-forgot-password:hover {
-    color: var(--primary-purple);
-}
-
-.link-register {
-    color: var(--primary-purple) !important;
-    font-weight: 600;
-}
-
-.link-register:hover {
-    color: var(--primary-purple-dark) !important;
-    text-decoration: underline;
-}
-
-/* 登录按钮 */
-.btn-login-submit {
-    width: 100%;
-    padding: 1rem;
-    background: var(--text-dark);
-    color: var(--white);
-    border: none;
-    border-radius: var(--border-radius-sm);
-    font-size: 1.1rem;
-    font-weight: 600;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    margin-top: var(--spacing-sm);
-}
-
-.btn-login-submit:hover {
-    background: #1a1a1a;
-    transform: translateY(-2px);
-    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
-}
-
-/* 返回首页 */
-.back-to-home {
-    text-align: center;
-    margin-top: var(--spacing-md);
-}
-
-.back-to-home a {
-    color: var(--text-dark);
-    font-size: 0.95rem;
-    display: inline-flex;
-    align-items: center;
-    gap: 0.5rem;
-    padding: 0.6rem 1.2rem;
-    background: rgba(255, 255, 255, 0.8);
-    border-radius: var(--border-radius-sm);
-    transition: all 0.3s ease;
-}
-
-.back-to-home a:hover {
-    background: var(--white);
-    color: var(--primary-purple);
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-}
-
-/* 登录页面响应式 */
-@media (max-width: 768px) {
-    .login-card {
-        padding: var(--spacing-lg);
-    }
-    
-    .login-title {
-        font-size: 1.6rem;
-    }
-    
-    .captcha-input-wrapper {
-        flex-direction: column;
-        align-items: stretch;
-    }
-    
-    .captcha-image {
-        align-self: center;
-    }
-}
-
-@media (max-width: 480px) {
-    .login-container {
-        padding: var(--spacing-sm);
-    }
-    
-    .login-card {
-        padding: var(--spacing-md);
-    }
-    
-    .login-logo h1 {
-        font-size: 2rem;
-    }
-}
-
