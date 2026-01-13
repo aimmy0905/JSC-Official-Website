@@ -17,6 +17,7 @@ export default defineNuxtConfig({
         { name: 'baidu-site-verification', content: 'codeva-VuCfJ7vOoN' }
       ],
       link: [
+        { rel: 'icon', type: 'image/svg', href: '/favicon.svg' },
         { rel: 'stylesheet', href: 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css' }
       ],
       title: 'JSC Dropshipping'
