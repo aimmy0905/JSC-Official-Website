@@ -43,7 +43,7 @@ const workSteps = [
       <div class="container">
         <h1>Services</h1>
         <div class="breadcrumb">
-          <NuxtLink to="/">Home</NuxtLink>
+          <NuxtLink to="/" aria-label="Go to Home Page">Home</NuxtLink>
           <span>/</span>
           <span>Services</span>
         </div>
@@ -139,7 +139,7 @@ const workSteps = [
 
         <div class="work-intro">
           <p>Dropshipping is a convenient business model that requires no inventory: After you complete a sale, we handle the entire process of product sourcing, warehouse management, quality inspection, repackaging, and finally direct delivery to your customers.</p>
-          <p class="contact-prompt">For inquiries, please send an email to <a href="mailto:info@jscdropshipping.com">info@jscdropshipping.com</a>, or contact us via the live chat in the bottom right corner!</p>
+          <p class="contact-prompt">For inquiries, please send an email to <a href="mailto:info@jscdropshipping.com" aria-label="Email Us">info@jscdropshipping.com</a>, or contact us via the live chat in the bottom right corner!</p>
         </div>
 
         <div class="work-steps">

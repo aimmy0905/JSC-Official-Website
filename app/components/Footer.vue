@@ -20,7 +20,7 @@ const footerLinks = [
           <h4>Quick Links</h4>
           <ul>
             <li v-for="link in footerLinks" :key="link.path">
-              <NuxtLink :to="link.path">{{ link.label }}</NuxtLink>
+              <NuxtLink :to="link.path" :aria-label="`Go to ${link.label} Page`">{{ link.label }}</NuxtLink>
             </li>
           </ul>
         </div>
@@ -29,7 +29,7 @@ const footerLinks = [
           <h4>Contact Us</h4>
           <ul>
             <li>
-              <a href="mailto:info@jscdropshipping.com">
+              <a href="mailto:info@jscdropshipping.com" aria-label="Email Us">
                 <i class="fas fa-envelope"></i>
                 info@jscdropshipping.com
               </a>
@@ -41,10 +41,10 @@ const footerLinks = [
         <div class="footer-section">
           <h4>Follow Us</h4>
           <div class="social-links">
-            <a href="#"><i class="fab fa-facebook"></i></a>
-            <a href="#"><i class="fab fa-twitter"></i></a>
-            <a href="#"><i class="fab fa-linkedin"></i></a>
-            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#" aria-label="Follow us on Facebook"><i class="fab fa-facebook"></i></a>
+            <a href="#" aria-label="Follow us on Twitter"><i class="fab fa-twitter"></i></a>
+            <a href="#" aria-label="Follow us on LinkedIn"><i class="fab fa-linkedin"></i></a>
+            <a href="#" aria-label="Follow us on Instagram"><i class="fab fa-instagram"></i></a>
           </div>
         </div>
       </div>

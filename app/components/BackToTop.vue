@@ -27,6 +27,8 @@ onUnmounted(() => {
     class="back-to-top"
     :class="{ show: isVisible }"
     @click="scrollToTop"
+    aria-label="Back to Top"
+    title="Back to Top"
   >
     <i class="fas fa-arrow-up"></i>
   </button>

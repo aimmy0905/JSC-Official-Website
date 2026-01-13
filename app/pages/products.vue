@@ -141,7 +141,7 @@ const getPageRange = computed(() => {
             placeholder="Search products..."
             @keypress.enter="searchProducts"
           >
-          <button type="button" @click="searchProducts">
+          <button type="button" @click="searchProducts" aria-label="Search Products" title="Search Products">
             <i class="fas fa-search"></i>
           </button>
         </div>
@@ -195,6 +195,8 @@ const getPageRange = computed(() => {
             class="page-btn"
             :disabled="currentPage === 1"
             @click="changePage(currentPage - 1)"
+            aria-label="Previous Page"
+            title="Previous Page"
           >
             <i class="fas fa-chevron-left"></i>
           </button>
@@ -206,6 +208,8 @@ const getPageRange = computed(() => {
             :class="{ active: currentPage === page, ellipsis: page === -1 }"
             :disabled="page === -1"
             @click="page !== -1 && changePage(page)"
+            :aria-label="page === -1 ? 'More Pages' : `Page ${page}`"
+            :title="page === -1 ? 'More Pages' : `Page ${page}`"
           >
             {{ page === -1 ? '...' : page }}
           </button>
@@ -214,6 +218,8 @@ const getPageRange = computed(() => {
             class="page-btn"
             :disabled="currentPage === totalPages"
             @click="changePage(currentPage + 1)"
+            aria-label="Next Page"
+            title="Next Page"
           >
             <i class="fas fa-chevron-right"></i>
           </button>
@@ -226,7 +232,7 @@ const getPageRange = computed(() => {
       <div class="container">
         <h2>Can't Find What You're Looking For?</h2>
         <p>Contact our professional team and we'll create a customized sourcing solution for you</p>
-        <a href="mailto:info@jscdropshipping.com" class="btn-primary">
+        <a href="mailto:info@jscdropshipping.com" class="btn-primary" aria-label="Contact Us via Email">
           <i class="fas fa-envelope"></i> Contact Us
         </a>
       </div>

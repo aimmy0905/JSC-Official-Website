@@ -86,7 +86,7 @@ const toggleFaq = (index: number) => {
       <div class="container">
         <h1>Frequently Asked Questions</h1>
         <div class="breadcrumb">
-          <NuxtLink to="/">Home</NuxtLink>
+          <NuxtLink to="/" aria-label="Go to Home Page">Home</NuxtLink>
           <span>/</span>
           <span>FAQ</span>
         </div>
@@ -138,7 +138,7 @@ const toggleFaq = (index: number) => {
       <div class="container">
         <h2>Have Other Questions?</h2>
         <p>Our professional team is always ready to answer</p>
-        <a href="mailto:info@jscdropshipping.com" class="btn-primary">
+        <a href="mailto:info@jscdropshipping.com" class="btn-primary" aria-label="Contact Us via Email">
           <i class="fas fa-envelope"></i> Contact Us
         </a>
       </div>

@@ -2,11 +2,19 @@
 const { getRandomProducts } = useProducts()
 
 useHead({
-  title: 'JSC Dropshipping - Home'
+  title: 'JSC Dropshipping - Home',
+  link: [
+    {
+      rel: 'preload',
+      as: 'image',
+      href: '/images/banner/1280X1280.JPEG',
+      fetchpriority: 'high'
+    }
+  ]
 })
 
-// Get 8 random hot products
-const hotProducts = getRandomProducts(8)
+// Get 8 random hot products - using useState to ensure SSR and client hydration match
+const hotProducts = useState('hotProducts', () => getRandomProducts(8))
 
 const services = [
   {
@@ -108,13 +116,20 @@ const advantages = [
             <p class="hero-description">
               Achieve higher profitability for every order at the lowest cost without compromising quality.
             </p>
-            <a href="https://apps.shopify.com/jsc-dropshipping" target="_blank" class="btn-primary">
+            <a href="https://apps.shopify.com/jsc-dropshipping" target="_blank" class="btn-primary" aria-label="Install Shopify App">
               <i class="fab fa-shopify"></i> Install Shopify App
             </a>
           </div>
           <div class="hero-image">
             <div class="dashboard-mockup">
-              <img src="/images/banner/1280X1280.JPEG" alt="JSC Dropshipping Dashboard" class="banner-img">
+              <img
+                src="/images/banner/1280X1280.JPEG"
+                alt="JSC Dropshipping Dashboard"
+                class="banner-img"
+                fetchpriority="high"
+                width="1280"
+                height="1280"
+              >
               <i class="fas fa-chart-line fallback-icon"></i>
             </div>
           </div>
@@ -234,7 +249,7 @@ const advantages = [
         </div>
 
         <div class="cta-button">
-          <NuxtLink to="/products" class="btn-secondary">
+          <NuxtLink to="/products" class="btn-secondary" aria-label="View More Products">
             View More Products
           </NuxtLink>
         </div>

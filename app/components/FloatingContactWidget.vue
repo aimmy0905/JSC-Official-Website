@@ -46,6 +46,7 @@ const openContact = (platform: 'whatsapp' | 'telegram' | 'skype') => {
         class="contact-btn whatsapp"
         @click="openContact('whatsapp')"
         :title="contactConfig.whatsapp.label"
+        :aria-label="contactConfig.whatsapp.label"
       >
         <i class="fab fa-whatsapp"></i>
       </button>
@@ -54,6 +55,7 @@ const openContact = (platform: 'whatsapp' | 'telegram' | 'skype') => {
         class="contact-btn telegram"
         @click="openContact('telegram')"
         :title="contactConfig.telegram.label"
+        :aria-label="contactConfig.telegram.label"
       >
         <i class="fab fa-telegram"></i>
       </button>
@@ -62,6 +64,7 @@ const openContact = (platform: 'whatsapp' | 'telegram' | 'skype') => {
         class="contact-btn skype"
         @click="openContact('skype')"
         :title="contactConfig.skype.label"
+        :aria-label="contactConfig.skype.label"
       >
         <i class="fab fa-skype"></i>
       </button>
@@ -72,7 +75,8 @@ const openContact = (platform: 'whatsapp' | 'telegram' | 'skype') => {
       class="main-button"
       @click="toggleExpanded"
       :class="{ active: isExpanded }"
-      title="联系我们"
+      title="Contact Us"
+      aria-label="Contact Us"
     >
       <i class="fas fa-comment" v-if="!isExpanded"></i>
       <i class="fas fa-times" v-else></i>

@@ -60,7 +60,7 @@ const scrollTestimonials = (direction: 'prev' | 'next') => {
       </div>
 
       <div class="testimonials-slider-container">
-        <button class="slider-btn slider-btn-prev" @click="scrollTestimonials('prev')">
+        <button class="slider-btn slider-btn-prev" @click="scrollTestimonials('prev')" aria-label="Previous Testimonial" title="Previous Testimonial">
           <i class="fas fa-chevron-left"></i>
         </button>
 
@@ -86,7 +86,7 @@ const scrollTestimonials = (direction: 'prev' | 'next') => {
           </div>
         </div>
 
-        <button class="slider-btn slider-btn-next" @click="scrollTestimonials('next')">
+        <button class="slider-btn slider-btn-next" @click="scrollTestimonials('next')" aria-label="Next Testimonial" title="Next Testimonial">
           <i class="fas fa-chevron-right"></i>
         </button>
       </div>
